@@ -26,8 +26,8 @@ def ascii_img():
         print("░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░ ")
         print("░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░ ")
         print("░▒▓███████▓▒░░▒▓████████▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓██████▓▒░  ")
-        print(Color.CYAN+f"[*-*] {Color.LIGHT_WHITE}=> {Color.RED}YOUTUBE : {Color .LIGHT_WHITE}https://www.youtube.com/@wne9838"+ Color.END)                                                  
-        print(Color.CYAN+f"[*-*] {Color.LIGHT_WHITE}=> {Color.BLUE}FB : https://www.facebook.com/accngunghoatdongreal0"+ Color.END) 
+        print(Color.CYAN+f"[*-*] {Color.LIGHT_WHITE}=> {Color.RED}DISCORD : {Color .LIGHT_GREEN}MINHHOALONG6 "+ Color.END)                                                  
+   
 def draw_full_width_box_mini(text):
     terminal_width = shutil.get_terminal_size().columns // 3 
     text_with_color = Color.YELLOW + text + Color.GREEN
@@ -1496,8 +1496,8 @@ def main():
     os.system("cls" if os.name == "nt" else "clear")
     ascii_img()
     split_terminal()
-    LOGO_TEXT("Github","deno4908")
-    LOGO_TEXT("MOMO/ZALO/MB","0961442667")
+    LOGO_TEXT("7A","1")
+    LOGO_TEXT("BẢN QUYỀN","KHANG")
     split_terminal()
     draw_full_width_box("THÔNG TIN TÀI KHOẢN")
     data = LoadJSON()
@@ -1521,3 +1521,6 @@ def main():
             data['data']['Auth'] = ""
             SaveJSON(data)
             main()
+if __name__ == "__main__":
+    main()
+

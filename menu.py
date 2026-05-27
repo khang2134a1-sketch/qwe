@@ -7,6 +7,7 @@
 
 
 
+
 import os
 from services.color import Color
 import shutil
@@ -27,15 +28,18 @@ import services.adb as adb
 import dns.resolver
 resolver = dns.resolver.Resolver()
 resolver.nameservers = ["1.1.1.1"]
+# Thêm vào đầu file menu.py, sau các dòng import
+
+import sys
+
+
 def ascii_img():  
-  print("\033[31m  ▓███████▓      ▓███████▓    ▓█▓\033[0m")
-  print("\033[33m        ▓█▓      ▓█▓   ▓█▓    ▓█▓\033[0m")
-  print("\033[32m        ▓█▓      ▓█▓   ▓█▓    ▓█▓\033[0m")
-  print("\033[36m        ▓█▓      ▓███████▓    ▓█▓\033[0m")
-  print("\033[34m        ▓█▓      ▓█▓   ▓█▓    ▓█▓\033[0m")
-  print("\033[35m        ▓█▓      ▓█▓   ▓█▓    ▓█▓\033[0m")
-  print("\033[91m        ▓█▓      ▓█▓   ▓█▓    ▓█▓\033[0m")
-                                                       
+              print(" ██╗  ██╗████████╗ ██████╗  ██████╗ ██╗     ")
+              print(" ██║ ██╔╝╚══██╔══╝██╔═══██╗██╔═══██╗██║    ")
+              print(" █████╔╝    ██║   ██║   ██║██║   ██║██║     ")
+              print(" ██╔═██╗    ██║   ██║   ██║██║   ██║██║     ")
+              print(" ██║  ██╗   ██║   ╚██████╔╝╚██████╔╝███████╗")
+              print(" ╚═╝  ╚═╝   ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝")
   
 def draw_full_width_box_mini(text):
     terminal_width = shutil.get_terminal_size().columns // 3 
@@ -1532,3 +1536,4 @@ def main():
             main()
 if __name__ == "__main__":
     main()
+

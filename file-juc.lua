@@ -30,7 +30,8 @@ local mainFrame = createFrame()
 
 -- 2. Tiêu đề (có thể kéo thả nếu muốn, nhưng giữ đơn giản)
 local title = Instance.new("TextLabel")
-title.Text = "🚀 Script Runner"
+title.Text = "🚀 Script Runner by minhhoalong6 "
+title.Text = "Discord : minhhoalong6 "
 title.Size = UDim2.new(1, -20, 0, 45)
 title.Position = UDim2.new(0, 10, 0, 5)
 title.BackgroundTransparency = 1
